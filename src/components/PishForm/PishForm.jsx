@@ -38,7 +38,7 @@ const PishForm = () => {
             </Form.Item>
   
             <Form.Item >
-              <Button htmlType="submit"  type="primary" className='bg-send font-irSans rounded-xl mx-auto mb-8 px-6 pt-0 h-10 block text-lg '>ارسال</Button>
+              <Button htmlType="submit"  type="primary" className='bg-primary font-irSans rounded-xl mx-auto mb-8 px-6 pt-0 h-10 block text-lg '>ارسال</Button>
             </Form.Item>
             
         </form>  

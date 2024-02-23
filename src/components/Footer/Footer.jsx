@@ -11,8 +11,9 @@ const Footer = () => {
     <>
     <div className="w-[100%] bg-primary dark:bg-teal-800 p-10 mt-20 box-border" style={{borderTopLeftRadius: "5000px 200px", borderTopRightRadius: "5000px 400px"}}></div>
       <div className="flex items-center w-[100%] bg-primary dark:bg-teal-800 pb-10  font-irSans text-white text-sm box-border">
-        <div className="container mx-auto flex flex-col gap-y-6 md:flex-row justify-around">
-          <div className="flex flex-col mr-16 md:mr-0 "  >
+        <div className="container mx-auto flex flex-col gap-x-36 md:flex-row justify-center
+        max-xl:gap-x-20 w-[clamp(100px,90%,1200px)] max-sm:w-full">
+          <div className="flex flex-col mr-16 md:mr-0 ">
             <span className="indent-2 mb-4 cursor-default text-base md:text-lg">
               لینکها
             </span>
@@ -65,7 +66,7 @@ const Footer = () => {
               </li>
             </ul>
           </div>
-          <div className="w-60 h-44 sm:w-80 sm:h-60 mx-auto md:mx-0 bg-slate-200 rounded-lg overflow-hidden font-irSans"  >
+          <div className="w-60 h-44 sm:w-[500px] sm:h-60 mx-auto md:mx-0 bg-slate-200 rounded-lg overflow-hidden font-irSans max-sm:w-full"  >
             <MapLeafLet />
           </div>
         </div>

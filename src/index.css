@@ -124,3 +124,45 @@ button:focus-visible {
   cursor: pointer;
   background: #999;
 }
+
+
+
+/* leafLet */
+
+
+.leaflet-container {
+  height: 100%;
+}
+
+.leaflet-touch .leaflet-control-layers,
+.leaflet-touch .leaflet-bar {
+  border: none;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  gap: 7px;
+  transform: scale(1.25);
+  margin: 19px 15px;
+}
+
+.leaflet-bar a {
+  background: #338d81;
+  border-radius: 5px;
+  border: none;
+  color: white;
+}
+.leaflet-bar a:hover {
+  background: #4ed9c7;
+}
+
+.leaflet-control-attribution {
+  display: none;
+}
+
+@media only screen and (max-width: 640px) {
+  .leaflet-touch .leaflet-bar {
+    transform: scale(1);
+    margin: 8px 8px;
+  }
+}
