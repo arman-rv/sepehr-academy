@@ -5,9 +5,9 @@ import { getAllNews, getInfiniteAllNews } from "../../core/services/api/news";
 import { useInView } from "react-intersection-observer";
 import { ListNewsCards } from "./ListNewsCards";
 import { Button, Dropdown, Pagination, Space } from "antd";
-import SearchCourses from "../../components/common/search/SearchCourses";
-import { BsFillCalendarCheckFill } from "react-icons/bs";
-import http from "../../core/services/interceptor";
+// import SearchCourses from "../../components/common/search/searchCourses";
+// import { BsFillCalendarCheckFill } from "react-icons/bs";
+// import http from "../../core/services/interceptor";
 import { useRef } from "react";
 
 // import "react-datepicker/dist/react-datepicker.css";
@@ -16,20 +16,20 @@ import { useRef } from "react";
 
 const NewsArticle = () => {
   const qClient = new QueryClient();
-  const [search , setSearch] = useState('')
+  const [search, setSearch] = useState("");
   const ref = useRef();
 
-  const handleSearch = (e) =>{
-    clearTimeout(ref.current)
+  const handleSearch = (e) => {
+    clearTimeout(ref.current);
 
-   const timeOut = setTimeout(()=>{
-    e.target.value && setParams({...params, Query: e.target.value})
-   },800)
+    const timeOut = setTimeout(() => {
+      e.target.value && setParams({ ...params, Query: e.target.value });
+    }, 800);
 
-    !e.target.value && setParams({...params, Query: ''})
+    !e.target.value && setParams({ ...params, Query: "" });
 
-    ref.current = timeOut
-  }
+    ref.current = timeOut;
+  };
 
   const [params, setParams] = useState({
     PageNumber: 1,
@@ -38,7 +38,6 @@ const NewsArticle = () => {
     SortType: "DESC",
     Query: search,
   });
-
 
   const { data, isLoading, status } = useQuery({
     queryKey: ["newsList", params],
@@ -50,9 +49,9 @@ const NewsArticle = () => {
     },
   });
 
-  const changeStart = (pageSize) =>{
-    setParams({...params, PageNumber: pageSize}) ;
-  } 
+  const changeStart = (pageSize) => {
+    setParams({ ...params, PageNumber: pageSize });
+  };
 
   // const {
   //   status,
@@ -100,10 +99,15 @@ const NewsArticle = () => {
             اخبار و مقالات
           </p>
           {/* <AntdInputSearch className="flex  justify-items-center mx-auto placeholder:font-irSans placeholder:font-light placeholder:text-[10px] md:w-[400px]" /> */}
-          <div className='border mx-auto  flex rounded-lg  overflow-hidden w-8/12 md:w-6/12 h-10 md:h-12'>
-                <input onChange={handleSearch} type="text" className='block w-full pr-4' placeholder='جستجوی دوره ...' />
-                <button className='block  bg-magnifier bg-[length:30px_30px] bg-no-repeat bg-center  rounded-none w-10 md:w-12  text-white p-2.5 px-4 bg-zgh'></button>
-              </div>     
+          <div className="border mx-auto  flex rounded-lg  overflow-hidden w-8/12 md:w-6/12 h-10 md:h-12">
+            <input
+              onChange={handleSearch}
+              type="text"
+              className="block w-full pr-4"
+              placeholder="جستجوی دوره ..."
+            />
+            <button className="block  bg-magnifier bg-[length:30px_30px] bg-no-repeat bg-center  rounded-none w-10 md:w-12  text-white p-2.5 px-4 bg-zgh"></button>
+          </div>
         </div>
         {/*end Title and Input Seach  */}
         {/* filter newsArticle */}
@@ -133,7 +137,8 @@ const NewsArticle = () => {
               qClient.invalidateQueries("newsList");
               setParams({ ...params, SortingCol: "currentView" });
             }}
-            className=" text-xs text-gray-400  hover:text-gray-600 md:text-sm font-irSans cursor-pointer mb-1 border rounded-3xl  border-[#dddedf] bg-white pt-[.5625rem]  pb-[.5625rem] pr-2 pl-2 md:pr-4 md:pl-4 font-bold leading-4">
+            className=" text-xs text-gray-400  hover:text-gray-600 md:text-sm font-irSans cursor-pointer mb-1 border rounded-3xl  border-[#dddedf] bg-white pt-[.5625rem]  pb-[.5625rem] pr-2 pl-2 md:pr-4 md:pl-4 font-bold leading-4"
+          >
             <label htmlFor="mostVisited" className="cursor-pointer">
               پربازدیدترین
             </label>
@@ -143,7 +148,8 @@ const NewsArticle = () => {
               qClient.invalidateQueries("newsList");
               setParams({ ...params, SortingCol: "updateDate" });
             }}
-            className=" text-xs text-gray-400  hover:text-gray-600 md:text-sm font-irSans cursor-pointer mb-1 border rounded-3xl  border-[#dddedf] bg-white pt-[.5625rem]  pb-[.5625rem] pr-2 pl-2 md:pr-4 md:pl-4 fd font-bold leading-4">
+            className=" text-xs text-gray-400  hover:text-gray-600 md:text-sm font-irSans cursor-pointer mb-1 border rounded-3xl  border-[#dddedf] bg-white pt-[.5625rem]  pb-[.5625rem] pr-2 pl-2 md:pr-4 md:pl-4 fd font-bold leading-4"
+          >
             <label htmlFor="newest" className="cursor-pointer">
               جدیدترین
             </label>
@@ -158,7 +164,8 @@ const NewsArticle = () => {
                   ...params,
                   SortType: e.target.value,
                 });
-              }}>
+              }}
+            >
               <option defaultValue disabled>
                 ترتیب نمایش
               </option>
@@ -175,7 +182,8 @@ const NewsArticle = () => {
                 SortType: "DESC",
               });
             }}
-            className=" text-xs text-gray-400  hover:text-gray-600 md:text-sm font-irSans cursor-pointer mb-1 border rounded-3xl  border-[#dddedf] bg-white pt-[.5625rem]  pb-[.5625rem] pr-2 pl-2 md:pr-4 md:pl-4 fd font-bold leading-4">
+            className=" text-xs text-gray-400  hover:text-gray-600 md:text-sm font-irSans cursor-pointer mb-1 border rounded-3xl  border-[#dddedf] bg-white pt-[.5625rem]  pb-[.5625rem] pr-2 pl-2 md:pr-4 md:pl-4 fd font-bold leading-4"
+          >
             <label htmlFor="newest" className="cursor-pointer">
               حذف فیلتر
             </label>
