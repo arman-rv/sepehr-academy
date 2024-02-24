@@ -43,24 +43,24 @@ const PhoneNumber = ({step , setStep}) => {
     <Formik onSubmit={onSubmit} initialValues={{number : ''}} className='flex' validationSchema={validation}>
         {({values , handleSubmit , handleChange}) => (
             <form onSubmit={handleSubmit} >
-                <div className=" flex items-center justify-center font-irSans sm:p-0 w-full   xs:p-8">
-                    <div className="flex flex-col w-full p-12">
-                        <p className="mb-2 whitespace-nowrap  sm:text-base  xs:text-[14px] ">
+                <div className=" flex items-center justify-center font-irSans sm:p-0 w-full ">
+                    <div className="flex flex-col w-full p-12 max-[550px]:px-9 max-[550px]:pb-9 max-[400px]:px-6 max-xs:pb-7">
+                        <p className="mb-4 whitespace-normal  sm:text-base max-[550px]:mb-6 max-[550px]:text-center max-[350px]:text-sm max-xs:text-xs max-[270px]:text-[10.5px]">
                             شماره خود را وارد کنید
                         </p>
                         <Input
                         name='number' value={values.number} onChange={handleChange}
                         size="large  xs:default"
-                        placeholder="somayeh"
-                        className="text-center  border border-gray-400 rounded-md placeholder:font-sans placeholder:font-light"
+                        placeholder="09XXX"
+                        className="  border border-gray-400 rounded-md placeholder:font-sans placeholder:font-light max-[350px]:text-sm max-xs:text-xs"
                         />
                         <ErrorMessage name='number'/>
                     </div>
 
                 </div>
-                <div className='text-center'>
-                    <button type='submit' className='py-2 px-10 mx-4 text-white rounded-xl bg-green-400'>تایید</button>
-                    <button onClick={goLast}  className='py-2 px-10 mx-4 text-white rounded-xl bg-red-400'>بازگشت</button>                    
+                <div className='text-center flex justify-center flex-wrap gap-7 max-[550px]:flex-col items-center max-[400px]:px-6'>
+                    <button type='submit' className='flex justify-center  max-[350px]:font-bold max-[350px]:text-sm max-[350px]:py-[6px] max-[400px]:w-full py-2 w-32 px-10 text-white rounded-xl bg-green-400'>تایید</button>
+                    <button onClick={goLast}  className='flex justify-center max-[350px]:font-bold max-[350px]:text-sm max-[350px]:py-[6px]  max-[400px]:w-full text-center py-2 px-10 text-white rounded-xl bg-red-400'>بازگشت</button>                    
                 </div>
 
             </form>            

@@ -43,9 +43,9 @@ const RegisterCode = ({ step, setStep }) => {
       validationSchema={validation}>
       {({ values, handleSubmit, handleChange }) => (
         <form onSubmit={handleSubmit}>
-          <div className=" flex items-center justify-center font-irSans sm:p-0 w-full   xs:p-8">
+          <div className=" flex items-center justify-center font-irSans sm:p-0 w-full">
             <div className="flex flex-col w-full p-12">
-              <p className="mb-2 whitespace-nowrap  sm:text-base  xs:text-[14px] ">
+              <p className="mb-2 whitespace-nowrap  sm:text-base  ">
                 کد دریافت شده را وارد کنید
               </p>
               <Input

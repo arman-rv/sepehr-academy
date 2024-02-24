@@ -56,34 +56,31 @@ const LoginForm = ({ steps, setSteps }) => {
       className="flex">
       {({ values, handleSubmit, handleChange }) => (
         <form onSubmit={handleSubmit}>
-          <div className="  items-center justify-center font-irSans sm:p-0 w-full   xs:p-8">
+          <div className="  items-center justify-center font-irSans sm:p-0 w-full  xs:px-2 xs:pt-3">
             <div className="flex flex-col w-full p-8">
-              <p className="mb-2 whitespace-nowrap  sm:text-base  xs:text-[14px] ">
+              <p className="mb-2 whitespace-nowrap  sm:text-base ">
                 ایمیل یا شماره تلفن
               </p>
               <Input
                 name="email"
-                value={values.email}
                 onChange={handleChange}
                 size="large  xs:default"
-                placeholder="somayeh"
-                className="text-center  border border-gray-400 rounded-md placeholder:font-sans placeholder:font-light"
+                placeholder="example@gmail.com"
+                className="border border-gray-400 rounded-md placeholder:font-sans placeholder:font-medium"
               />
               <ErrorMessage name="email" />
             </div>
 
             <div className="flex flex-col w-full p-8">
-              <p className="mb-2 whitespace-nowrap  sm:text-base  xs:text-[14px] ">
+              <p className="mb-2 whitespace-nowrap  sm:text-base ">
                 پسورد
               </p>
               <Input.Password
                 name="pass"
-                value={values.pass}
                 onChange={handleChange}
                 size="large  xs:default"
-                placeholder="******************"
-                className="w-full flex-row-reverse  border border-gray-400 rounded-md placeholder:font-sans placeholder:font-light placeholder:align-middle "
-                dir="ltr"
+                placeholder="  xxxxxxxx"
+                className="w-full flex-row-reverse  border border-gray-400 rounded-md placeholder:font-sans placeholder:font-medium placeholder:align-middle "
                 iconRender={(visible) =>
                   visible ? <EyeTwoTone /> : <EyeInvisibleOutlined />
                 }
@@ -107,7 +104,7 @@ const LoginForm = ({ steps, setSteps }) => {
           <div className="text-center">
             <button
               type="submit"
-              className="py-2 px-10 mx-4 text-white rounded-xl bg-green-400">
+              className="py-2 px-10 mx-4 text-white rounded-xl bg-primary hover:bg-secondary">
               تایید
             </button>
           </div>

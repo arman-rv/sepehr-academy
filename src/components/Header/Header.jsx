@@ -206,7 +206,7 @@ const Header = () => {
         <div className="flex lg:flex-1">
           <a href="/" className="-m-1.5 p-1.5 flex items-center">
             <img className="h-8 md:h-10 w-auto" src={logo} alt="" />
-            <h2 className="ms-2 md:ms-4 font-irSans md:text-xl md:font-bold">
+            <h2 className="ms-2 md:ms-4 font-irSans text-xl md:font-bold">
               آکادمی سپهر
             </h2>
           </a>
@@ -256,7 +256,7 @@ const Header = () => {
           </Link>
           <Link
             to="#"
-            className="underline-hover bg-white dark:bg-inherit text-sm leading-6 font-irSans flex items-center gap-x-2 box-border hover:text-secondary transition-all duration-200 px-2 py-1">
+            className=" whitespace-nowrap underline-hover bg-white dark:bg-inherit text-sm leading-6 font-irSans flex items-center gap-x-2 box-border hover:text-secondary transition-all duration-200 px-2 py-1">
             <PhoneIcon className="h-4 w-4" aria-hidden="true" />
             <span>تماس با ما</span>
           </Link>

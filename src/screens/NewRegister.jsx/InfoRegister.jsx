@@ -51,10 +51,10 @@ const InfoRegister = ({step , setStep}) => {
     <Formik onSubmit={onSubmit} initialValues={{email : '' , pass : ''}} className='flex' validationSchema={validation}>
         {({values , handleSubmit , handleChange}) => (
             <form onSubmit={handleSubmit} >
-                <div className="  items-center justify-center font-irSans sm:p-0 w-full   xs:p-8">
+                <div className="  items-center justify-center font-irSans sm:p-0 w-full">
 
                     <div className="flex flex-col w-full p-8">
-                        <p className="mb-2 whitespace-nowrap  sm:text-base  xs:text-[14px] ">
+                        <p className="mb-2 whitespace-nowrap  sm:text-base ">
                             لطفا ایمیل خود را وارد کنید
                         </p>
                         <Input
@@ -67,7 +67,7 @@ const InfoRegister = ({step , setStep}) => {
                     </div>
 
                     <div className="flex flex-col w-full p-8">
-                        <p className="mb-2 whitespace-nowrap  sm:text-base  xs:text-[14px] ">
+                        <p className="mb-2 whitespace-nowrap  sm:text-base  ">
                             لطفا پسورد خود را وارد کنید
                         </p>
                         <Input.Password
