@@ -2,16 +2,18 @@ import React from "react";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 
-import Button from "../../components/common/button/button";
+// import Button from "../../components/common/button/button";
 import Services from "../../components/Services/Services";
 import Dastes from "../../components/daste/dastes";
 import AllCourse from "../../components/allcourse/allcourse";
-import TeachersSlider from "../../components/teachersSlider/teachersSlider";
-import News from "../../components/News/News";
+// import TeachersSlider from "../../components/teachersSlider/teachersSlider";
+// import News from "../../components/News/News";
 import Article from "../../components/Article/Article";
 import PishForm from "../../components/PishForm/PishForm";
+import { useTheme } from "../../components/Hooks/UseDarkTheme";
 
 const Landing = () => {
+  const { isDarkTheme } = useTheme();
   return (
     <div className="font-irSans px-4">
       {/* Introduction accademy */}
@@ -47,7 +49,6 @@ const Landing = () => {
             to="/courses"
             className="text-lg font-semibold px-4 py-2 bg-secondary hover:bg-primary rounded-xl text-white"
           >
-
             {/* <Button title='مشاهده دوره ها' paddingX='p-4' paddingY='p-4' extra='mx-auto mt-4'/>         */}
             مشاهده دوره ها
           </Link>
@@ -148,11 +149,19 @@ const Landing = () => {
             transition={{ delay: 0.5 }}
             className=" w-full lg:w-1/2 mt-12"
           >
-            <img
-              className="w-8/12 mx-auto lg:mr-16 rounded-2xl dark:filter"
-              src="./pish.png"
-              alt=""
-            />
+            {isDarkTheme ? (
+              <img
+                className="w-8/12 mx-auto lg:mr-16 rounded-2xl dark:filter"
+                src="./pishDark.png"
+                alt=""
+              />
+            ) : (
+              <img
+                className="w-8/12 mx-auto lg:mr-16 rounded-2xl dark:filter"
+                src="./pishLight.png"
+                alt=""
+              />
+            )}
           </motion.div>
         </div>
       </section>
