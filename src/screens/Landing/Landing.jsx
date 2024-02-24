@@ -116,14 +116,16 @@ const Landing = () => {
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         transition={{ delay: 0.3 }}
-        className="mt-30 text-justify"
+        className="mt-24 text-justify"
       >
         <h2 className="text-center text-2xl w-full">اخبار و مقالات</h2>
 
         <div className="flex flex-wrap xl:flex-nowrap gap-12 lg:px-48">
           <div className="flex flex-wrap  items-center w-10/12 xl:w-10/12 mx-auto my-8 gap-4">
-            <h3 className="  w-1/12">مقالات </h3>
-            <span className="bg-gray-300 dark:bg-slate-600 h-3 w-10/12 rounded-full"></span>
+            <div className="flex w-full items-center justify-center gap-1 max-[450px]:gap-x-8 max-[750px]:gap-4 max-sm:gap-5">
+              <h3 className="w-1/12">مقالات </h3>
+              <span className="bg-gray-300 dark:bg-slate-600 h-3 w-10/12 rounded-full"></span>
+            </div>
 
             <Article />
           </div>
