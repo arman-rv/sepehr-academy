@@ -44,8 +44,8 @@ const PhoneNumber = ({step , setStep}) => {
         {({values , handleSubmit , handleChange}) => (
             <form onSubmit={handleSubmit} >
                 <div className=" flex items-center justify-center font-irSans sm:p-0 w-full ">
-                    <div className="flex flex-col w-full p-12 max-[550px]:px-9 max-[550px]:pb-9 max-[400px]:px-6 max-xs:pb-7">
-                        <p className="mb-4 whitespace-normal  sm:text-base max-[550px]:mb-6 max-[550px]:text-center max-[350px]:text-sm max-xs:text-xs max-[270px]:text-[10.5px]">
+                    <div className="flex flex-col w-full p-12 max-[550px]:px-9 max-[550px]:pb-9 max-[400px]:px-6 max-xs:pb-7 text-red-600 max-[550px]:text-center max-[350px]:text-sm max-xs:text-xs max-[270px]:text-[10.5px]">
+                        <p className="mb-4 whitespace-normal  sm:text-base max-[550px]:mb-6  text-black">
                             شماره خود را وارد کنید
                         </p>
                         <Input

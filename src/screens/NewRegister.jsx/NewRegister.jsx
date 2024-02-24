@@ -10,7 +10,7 @@ const NewRegister = () => {
   const [step, setStep] = useState(0);
   return (
     <div className=" mx-auto py-14 w-screen   bg-gradient-to-b  from-primary dark:from-teal-800  border">
-      <div className="w-9/12  pb-14 mx-auto mt-12 bg-white dark:bg-slate-600 dark:text-stone-200 shadow-2xl rounded-2xl max-[550px]:pb-8">
+      <div className="w-9/12 max-sm:w-10/12 pb-14 mx-auto mt-12 bg-white dark:bg-slate-600 dark:text-stone-200 shadow-2xl rounded-2xl max-[550px]:pb-8">
         <div className="w-2/3 mx-auto max-[550px]:hidden">
           <Steps step={step} setStep={setStep} />
         </div>

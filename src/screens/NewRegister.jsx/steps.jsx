@@ -66,22 +66,22 @@ const [lastCyrcle, setLastCyrcle] = useState([
 
   return (
     <ul className='flex justify-items-center pt-8 lg:pb-6 mx-auto mt-12 gap-2 max-[550px]:flex-col max-[550px]:items-center max-[550px]:pt-0 max-[550px]:mt-8 max-[400px]:gap-1 max-[400px]:mt-12' style={{direction : 'ltr'}}>
-        <li className={`max-[400px]:p-[14px] max-[400px]:h-0 max-[400px]:w-0 h-8 w-8 p-4 flex items-center justify-center rounded-full bg-gray-300 ${firstCyrcle[step]}`}>
+        <li className={`max-[350px]:p-[14px] max-[350px]:h-0 max-[350px]:w-0 h-8 w-8 p-4 flex items-center justify-center rounded-full bg-gray-300 ${firstCyrcle[step]}`}>
             1
         </li>
-        <li className={`max-[400px]:h-5 max-[400px]:border-[1.5px] max-[550px]:w-0 max-[550px]:h-8 max-[550px]:mt-0 border-2 mt-4 h-1 w-full ${firstLine[step]}`}></li>
+        <li className={`max-[350px]:h-5 max-[350px]:border-[1.5px] max-[550px]:w-0 max-[550px]:h-8 max-[550px]:mt-0 border-2 mt-4 h-1 w-full ${firstLine[step]}`}></li>
 
-        <li className={`max-[400px]:p-[14px] max-[400px]:h-0 max-[400px]:w-0 h-8 w-8 p-4 flex  items-center justify-center rounded-full bg-gray-300 ${secondCyrcle[step]}`}>
+        <li className={`max-[350px]:p-[14px] max-[350px]:h-0 max-[350px]:w-0 h-8 w-8 p-4 flex  items-center justify-center rounded-full bg-gray-300 ${secondCyrcle[step]}`}>
             2
         </li>
-        <li className={`max-[400px]:h-5 max-[400px]:border-[1.5px] max-[550px]:w-0 max-[550px]:h-8 max-[550px]:mt-0 border-2 mt-4 h-1 w-full ${secondtLine[step]} `}></li> 
+        <li className={`max-[350px]:h-5 max-[350px]:border-[1.5px] max-[550px]:w-0 max-[550px]:h-8 max-[550px]:mt-0 border-2 mt-4 h-1 w-full ${secondtLine[step]} `}></li> 
 
-        <li className={`max-[400px]:p-[14px] max-[400px]:h-0 max-[400px]:w-0 h-8 w-8 p-4 flex  items-center justify-center rounded-full bg-gray-300 ${thirdCyrcle[step]}`}>
+        <li className={`max-[350px]:p-[14px] max-[350px]:h-0 max-[350px]:w-0 h-8 w-8 p-4 flex  items-center justify-center rounded-full bg-gray-300 ${thirdCyrcle[step]}`}>
             3
         </li>
-        <li className={`max-[400px]:h-5 max-[400px]:border-[1.5px]  max-[550px]:w-0 max-[550px]:h-8 max-[550px]:mt-0 border-2 mt-4  h-1 w-full ${thirdtLine[step]}`}></li> 
+        <li className={`max-[350px]:h-5 max-[350px]:border-[1.5px]  max-[550px]:w-0 max-[550px]:h-8 max-[550px]:mt-0 border-2 mt-4  h-1 w-full ${thirdtLine[step]}`}></li> 
 
-        <li className={`max-[400px]:p-[14px] max-[400px]:h-0 max-[400px]:w-0 h-8 w-8 p-4 flex  items-center justify-center rounded-full bg-gray-300 ${lastCyrcle[step]}`}>
+        <li className={`max-[350px]:p-[14px] max-[350px]:h-0 max-[350px]:w-0 h-8 w-8 p-4 flex  items-center justify-center rounded-full bg-gray-300 ${lastCyrcle[step]}`}>
             4
         </li>        
     </ul>
