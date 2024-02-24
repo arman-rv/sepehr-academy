@@ -11,7 +11,7 @@ const EmailAndPassword = () => {
           </p>
           <Input
             size="large xs:default"
-            placeholder="Reaction@gmail.com"
+            placeholder="example@gmail.com"
             prefix={<MailOutlined className="text-gray-400" />}
             className=" w-full border border-gray-400 rounded-md placeholder:font-sans sm:placeholder:font-light  xs:placeholder:text-[8px]"
             dir="ltr"

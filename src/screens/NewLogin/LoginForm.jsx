@@ -57,8 +57,8 @@ const LoginForm = ({ steps, setSteps }) => {
       {({ values, handleSubmit, handleChange }) => (
         <form onSubmit={handleSubmit}>
           <div className="  items-center justify-center font-irSans sm:p-0 w-full  xs:px-2 xs:pt-3">
-            <div className="flex flex-col w-full p-8">
-              <p className="mb-2 whitespace-nowrap  sm:text-base ">
+            <div className="flex flex-col w-full p-8 pb-0">
+              <p className="mb-4 pr-2 whitespace-nowrap  sm:text-base ">
                 ایمیل یا شماره تلفن
               </p>
               <Input
@@ -66,13 +66,13 @@ const LoginForm = ({ steps, setSteps }) => {
                 onChange={handleChange}
                 size="large  xs:default"
                 placeholder="example@gmail.com"
-                className="border border-gray-400 rounded-md placeholder:font-sans placeholder:font-medium"
+                className="dark:placeholder:text-gray-400 border border-gray-400 rounded-md placeholder:font-sans placeholder:font-medium"
               />
               <ErrorMessage name="email" />
             </div>
 
-            <div className="flex flex-col w-full p-8">
-              <p className="mb-2 whitespace-nowrap  sm:text-base ">
+            <div className="flex flex-col w-full p-8 pb-0">
+              <p className="mb-4 pr-2  whitespace-nowrap  sm:text-base ">
                 پسورد
               </p>
               <Input.Password
@@ -80,7 +80,7 @@ const LoginForm = ({ steps, setSteps }) => {
                 onChange={handleChange}
                 size="large  xs:default"
                 placeholder="  xxxxxxxx"
-                className="w-full flex-row-reverse  border border-gray-400 rounded-md placeholder:font-sans placeholder:font-medium placeholder:align-middle "
+                className="dark:placeholder:text-gray-400 w-full flex-row-reverse  border border-gray-400 rounded-md placeholder:font-sans placeholder:font-medium placeholder:align-middle "
                 iconRender={(visible) =>
                   visible ? <EyeTwoTone /> : <EyeInvisibleOutlined />
                 }
@@ -88,7 +88,7 @@ const LoginForm = ({ steps, setSteps }) => {
               <ErrorMessage name="pass" />
             </div>
 
-            <div className="  w-full p-8">
+            <div className="  w-full p-6 pr-9">
               <input
                 name="check"
                 id="check"

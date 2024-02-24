@@ -21,19 +21,19 @@ const PishForm = () => {
 
   <Formik onSubmit={onSubmit} initialValues={{email: "" , text: "",}} validationSchema={validation}>
     {({values , handleSubmit , handleChange})=>(
-            <form onSubmit={handleSubmit} className=' shadow-xl mx-auto lg:mr-48 mt-12 pt-6 px-4 sm:px-12 w-8/12 dark:bg-slate-700 rounded-2xl dark:text-stone-200 font-irSans dark:shadow-shadowDarkUp'     >
+            <form onSubmit={handleSubmit} className=' shadow-xl mx-auto lg:mr-48 mt-12 pt-6 px-4 sm:px-12 w-8/12 dark:bg-[#475569] rounded-2xl dark:text-stone-200 font-irSans dark:shadow-shadowDarkUp'     >
       
             <label htmlFor='d1'>ایمیل شما</label>
             <Form.Item id='d1' className='w-full  mt-4 rounded-xl' name="email" rules={[{ required: true, message: 'Please input your username!',},]}>
             <Input name='email' value={values.email} onChange={handleChange} 
-              className='w-full h-14 text-xl p-4' style={{direction:'ltr'}} placeholder='Maryammohajer@gmail.com'/>
+              className='w-full h-14 text-xl p-4 dark:bg-slate-200' style={{direction:'ltr'}} placeholder='example@gmail.com'/>
               <ErrorMessage name='email'/>
             </Form.Item>
   
             <label htmlFor='d2'>متن پیام شما</label>
             <Form.Item id='d2' className='mt-4'>
               <TextArea name='text'  value={values.text} onChange={handleChange} 
-              className='h-24 rounded-xl' style={{direction:'ltr' , height:'160px' ,minHeight:'100px'}}/>
+              className='h-24 rounded-xl dark:bg-slate-200' style={{direction:'ltr' , height:'160px' ,minHeight:'100px'}}/>
               <ErrorMessage name='text'/>
             </Form.Item>
   

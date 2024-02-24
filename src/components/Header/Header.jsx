@@ -256,7 +256,7 @@ const Header = () => {
           </Link>
           <Link
             to="#"
-            className=" whitespace-nowrap underline-hover bg-white dark:bg-inherit text-sm leading-6 font-irSans flex items-center gap-x-2 box-border hover:text-secondary transition-all duration-200 px-2 py-1">
+            className="text-sm leading-6 font-irSans flex items-center gap-x-2 hover:border-b-2 hover:border-secondary box-border hover:text-secondary transition-all duration-150 px-2 py-1">
             <PhoneIcon className="h-4 w-4" aria-hidden="true" />
             <span>تماس با ما</span>
           </Link>
@@ -368,7 +368,7 @@ const Header = () => {
               <div className="py-6 flex gap-x-4">
                 <Link
                   to="login"
-                  className="bg-white dark:bg-slate-400 text-sm leading-6 px-4 py-1 text-gray-800 font-irSans border border-gray-400 rounded-lg hover:text-black hover:shadow-lg transition-all duration-200">
+                  className="bg-white dark:bg-slate-700 text-sm leading-6 px-4 py-1 text-gray-800 font-irSans border border-gray-400 rounded-lg hover:text-black hover:shadow-lg transition-all duration-200">
                   <span>ورود</span>
                 </Link>
                 <Link

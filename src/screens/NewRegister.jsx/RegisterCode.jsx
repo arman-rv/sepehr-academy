@@ -53,7 +53,7 @@ const RegisterCode = ({ step, setStep }) => {
                 value={values.number}
                 onChange={handleChange}
                 size="large  xs:default"
-                placeholder="somayeh"
+                placeholder="arman"
                 className="text-center  border border-gray-400 rounded-md placeholder:font-sans placeholder:font-light"
               />
               <ErrorMessage name="number" />

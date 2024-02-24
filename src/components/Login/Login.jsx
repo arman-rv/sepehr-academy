@@ -42,7 +42,7 @@ const Login = () => {
                   <div className="flex">
                     <Input
                       size="large xs:default"
-                      placeholder="Reaction@gmail.com"
+                      placeholder="example@gmail.com"
                       dir="ltr"
                       prefix={<MailOutlined className="text-gray-400" />}
                       className=" mail-input-login dir=ltr"

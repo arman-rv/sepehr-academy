@@ -24,7 +24,7 @@ const NewRegister = () => {
           </div>
 
           <div className="w-1/2 max-lg:hidden">
-            <img src="./register.png" className="h-80 mx-auto" alt="" />
+            <img src="./registerDark.svg" className="h-80 mx-auto" alt="" />
           </div>
 
           <div className="w-2/3 mx-auto hidden max-[550px]:block  max-[550px]:w-1/3 max-[400px]:w-[25%]">

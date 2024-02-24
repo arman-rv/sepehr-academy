@@ -1,7 +1,7 @@
-import React, { useState } from 'react'
+// import React, { useState } from 'react'
 import SearchCourses from '../common/search/searchCourses'
-import { Pagination } from 'antd'
-import style from './PaidCourses.modules.css'
+// import { Pagination } from 'antd'
+// import style from './PaidCourses.modules.css'
 import http from '../../core/services/interceptor'
 import {useQuery} from 'react-query'
 import toast, { Toaster } from 'react-hot-toast';

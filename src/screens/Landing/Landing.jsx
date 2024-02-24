@@ -139,9 +139,9 @@ const Landing = () => {
             initial={{ x : -10 , opacity: 0  }}
             whileInView={{ x : 0 , opacity: 1 }}
             transition={{delay:0.5}}
-            className=' w-full lg:w-1/2'
+            className=' w-full lg:w-1/2 mt-12'
             >
-              <img className='w-8/12 mx-auto lg:mr-16 rounded-2xl' src="./pish.png" alt="" />
+              <img className='w-8/12 mx-auto lg:mr-16 rounded-2xl dark:filter' src="./pish.png" alt="" />
             </motion.div>
             
           </div>

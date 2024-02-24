@@ -60,7 +60,7 @@ const InfoRegister = ({step , setStep}) => {
                         <Input
                         name='email' value={values.email} onChange={handleChange}
                         size="large  xs:default"
-                        placeholder="somayeh"
+                        placeholder="arman"
                         className="text-center  border border-gray-400 rounded-md placeholder:font-sans placeholder:font-light"
                         />
                         <ErrorMessage name='email'/>
