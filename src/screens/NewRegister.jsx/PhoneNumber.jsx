@@ -59,8 +59,8 @@ const PhoneNumber = ({step , setStep}) => {
 
                 </div>
                 <div className='text-center flex justify-center flex-wrap gap-7 max-[550px]:flex-col items-center max-[400px]:px-6'>
-                    <button type='submit' className='flex justify-center  max-[350px]:font-bold max-[350px]:text-sm max-[350px]:py-[6px] max-[400px]:w-full py-2 w-32 px-10 text-white rounded-xl bg-primary'>تایید</button>
-                    <button onClick={goLast}  className='flex justify-center max-[350px]:font-bold max-[350px]:text-sm max-[350px]:py-[6px]  max-[400px]:w-full text-center py-2 px-10 text-white rounded-xl bg-secondary'>بازگشت</button>                    
+                    <button type='submit' className='flex justify-center  max-[350px]:font-bold max-[350px]:text-sm max-[350px]:py-[6px] max-[400px]:w-full py-2 w-32 px-10 text-white rounded-xl bg-primary border-none hover:bg-[#46a89b]'>تایید</button>
+                    <button onClick={goLast}  className='flex justify-center max-[350px]:font-bold max-[350px]:text-sm max-[350px]:py-[6px]  max-[400px]:w-full text-center py-2 px-10 text-white rounded-xl bg-secondary border-none hover:bg-[#ebbf5f]'>بازگشت</button>                    
                 </div>
 
             </form>            

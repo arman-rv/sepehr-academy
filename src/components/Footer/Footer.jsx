@@ -56,10 +56,10 @@ const Footer = () => {
                   برای دریافت خبرنامه، ایمیل خود را ثبت کنید:
                 </span>
                 <Space.Compact className="w-[80%] mt-2">
-                  <Input defaultValue="example@company.com" />
+                  <Input placeholder="example@gmail.com" className="placeholder:text-stone-400" />
                   <Button
-                    className="bg-secondary font-irSans text-white"
-                    type="primary">
+                    className="bg-secondary font-irSans text-white hover:text-white hover:bg-primary"
+                    type="secondary">
                     ارسال
                   </Button>
                 </Space.Compact>

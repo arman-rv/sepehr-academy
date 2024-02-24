@@ -6,9 +6,9 @@ const Service = ({name , pic , desc}) => {
         <div className='  mx-auto rounded-full overflow-hidden w-36 h-36 lg:w-30 lg:h-30'>
         <img src={pic}/>
         </div>
-        <h3 className='mb-2'>{name}</h3>
+        <h3 className='my-2 '>{name}</h3>
         <span className='block w-16 mx-auto border-b-4 border-yellow-400'></span>
-        <p className='mt-2 text-lg'>{desc}</p>
+        <p className='mt-2 text-lg px-6'>{desc}</p>
     </div>
   )
 }

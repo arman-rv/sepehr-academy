@@ -294,12 +294,12 @@ const Header = () => {
             <HeaderSearch />
             <Link
               to="login"
-              className="bg-white text-sm leading-6 px-4 py-1 text-gray-800 font-irSans border border-gray-400 rounded-lg hover:text-black hover:shadow-lg transition-all duration-200">
+              className="bg-primary text-sm leading-6 px-4 py-1 text-white font-irSans font-semibold rounded-lg hover:bg-[#46a89b]  hover:shadow-lg transition-all duration-200">
               <span>ورود</span>
             </Link>
             <Link
               to="register"
-              className="text-sm leading-6 text-zinc-100 bg-secondary px-4 py-1 font-irSans rounded-lg hover:bg-yellow-600 hover:text-white hover:shadow-md hover:shadow-yellow-700 transition-all duration-200">
+              className="text-sm leading-6 bg-secondary px-4 py-1 font-irSans rounded-lg  text-white font-semibold hover:shadow-lg hover:bg-[#ebbf5f] transition-all duration-200">
               <span>ثبت نام</span>
             </Link>
           </div>
@@ -323,7 +323,7 @@ const Header = () => {
             </Link>
             <button
               type="button"
-              className="-m-2.5 rounded-md p-2.5 text-gray-700"
+              className="-m-2.5 rounded-md p-2.5 text-gray-700 dark:invert-[100%]"
               onClick={() => setMobileMenuOpen(false)}>
               <span className="sr-only">Close menu</span>
               <XMarkIcon className="h-6 w-6" aria-hidden="true" />
@@ -368,12 +368,12 @@ const Header = () => {
               <div className="py-6 flex gap-x-4">
                 <Link
                   to="login"
-                  className="bg-white dark:bg-slate-700 text-sm leading-6 px-4 py-1 text-gray-800 font-irSans border border-gray-400 rounded-lg hover:text-black hover:shadow-lg transition-all duration-200">
+                  className="bg-primary hover:bg-[#46a89b] text-sm leading-6 px-4 py-1 font-semibold font-irSans b rounded-lg text-white hover:shadow-lg transition-all duration-200">
                   <span>ورود</span>
                 </Link>
                 <Link
                   to="register"
-                  className="text-sm leading-6 text-zinc-100 bg-secondary px-4 py-1 font-irSans rounded-lg hover:bg-yellow-600 hover:text-white hover:shadow-md hover:shadow-yellow-700 transition-all duration-200">
+                  className="text-sm leading-6 text-zinc-100 bg-secondary px-4 py-1 font-irSans rounded-lg hover:bg-[#ebbf5f] font-semibold hover:text-white hover:shadow-lg transition-all duration-200 ">
                   <span>ثبت نام</span>
                 </Link>
               </div>
