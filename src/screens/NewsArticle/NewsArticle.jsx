@@ -87,11 +87,11 @@ const NewsArticle = () => {
       <div className="flex w-full flex-col items-center  mx-auto p-5 gap-4">
         {/* Images */}
         <div className="w-full mx-auto justify-center ">
-          <img
+          {/* <img
             src="/public/assets/img/newsPic-removebg.png"
             className="mx-auto justify-center cursor-pointer "
             alt="newsPic"
-          />
+          /> */}
         </div>
         {/* Title and Input Seach  */}
         <div className="w-full flex flex-col items-center  gap-4">
